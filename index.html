@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blogr - A modern publishing platform. Grow your audience and build your online brand." />
+    <title>Blogr | A Modern Publishing Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+```
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__logo">
+      <a href="#" aria-label="Blogr home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="101" height="32" aria-hidden="true">
+          <text x="0" y="26" font-family="Overpass, sans-serif" font-size="28" font-weight="600" fill="white" letter-spacing="-1">Blogr</text>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Desktop Nav Links -->
+    <ul class="nav__links" role="menubar">
+      <li class="nav__item" role="none">
+        <button class="nav__dropdown-btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Product
+          <span class="nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__dropdown" role="menu" aria-label="Product submenu">
+          <li role="none"><a href="#" role="menuitem">Overview</a></li>
+          <li role="none"><a href="#" role="menuitem">Pricing</a></li>
+          <li role="none"><a href="#" role="menuitem">Marketplace</a></li>
+          <li role="none"><a href="#" role="menuitem">Features</a></li>
+          <li role="none"><a href="#" role="menuitem">Integrations</a></li>
+        </ul>
+      </li>
+      <li class="nav__item" role="none">
+        <button class="nav__dropdown-btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Company
+          <span class="nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__dropdown" role="menu" aria-label="Company submenu">
+          <li role="none"><a href="#" role="menuitem">About</a></li>
+          <li role="none"><a href="#" role="menuitem">Team</a></li>
+          <li role="none"><a href="#" role="menuitem">Blog</a></li>
+          <li role="none"><a href="#" role="menuitem">Careers</a></li>
+        </ul>
+      </li>
+      <li class="nav__item" role="none">
+        <button class="nav__dropdown-btn" aria-haspopup="true" aria-expanded="false" role="menuitem">
+          Connect
+          <span class="nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="nav__dropdown" role="menu" aria-label="Connect submenu">
+          <li role="none"><a href="#" role="menuitem">Contact</a></li>
+          <li role="none"><a href="#" role="menuitem">Newsletter</a></li>
+          <li role="none"><a href="#" role="menuitem">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Desktop Auth Buttons -->
+    <div class="nav__auth">
+      <a href="#" class="btn btn--login">Login</a>
+      <a href="#" class="btn btn--signup">Sign Up</a>
+    </div>
+
+    <!-- Hamburger Button (Mobile) -->
+    <button class="nav__hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <ul class="mobile-nav__links">
+      <li class="mobile-nav__item">
+        <button class="mobile-nav__dropdown-btn" aria-expanded="false">
+          Product
+          <span class="mobile-nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="mobile-nav__dropdown" aria-label="Product submenu">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <button class="mobile-nav__dropdown-btn" aria-expanded="false">
+          Company
+          <span class="mobile-nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="mobile-nav__dropdown" aria-label="Company submenu">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <button class="mobile-nav__dropdown-btn" aria-expanded="false">
+          Connect
+          <span class="mobile-nav__arrow" aria-hidden="true"></span>
+        </button>
+        <ul class="mobile-nav__dropdown" aria-label="Connect submenu">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </li>
+    </ul>
+    <hr class="mobile-nav__divider" />
+    <div class="mobile-nav__auth">
+      <a href="#" class="btn btn--login-dark">Login</a>
+      <a href="#" class="btn btn--signup-gradient">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="hero">
+    <h1 class="hero__title">A modern publishing platform</h1>
+    <p class="hero__subtitle">Grow your audience and build your online brand</p>
+    <div class="hero__buttons">
+      <a href="#" class="btn btn--start">Start for Free</a>
+      <a href="#" class="btn btn--learn">Learn More</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ========== SECTION: DESIGNED FOR THE FUTURE ========== -->
+  <section class="section-future" aria-labelledby="future-heading">
+    <h2 class="section-future__heading" id="future-heading">Designed for the future</h2>
+    <div class="section-future__content">
+      <div class="section-future__text">
+        <h3>Introducing an extensible editor</h3>
+        <p>Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.</p>
+        <h3>Robust content management</h3>
+        <p>Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you're in full control.</p>
+      </div>
+      <div class="section-future__image" aria-hidden="true">
+        <!-- Editor Illustration SVG -->
+        <svg viewBox="0 0 650 700" xmlns="http://www.w3.org/2000/svg" class="illus-editor">
+          <rect x="20" y="80" width="460" height="360" rx="18" fill="hsl(208,49%,24%)" opacity="0.07"/>
+          <rect x="20" y="80" width="460" height="38" rx="18" fill="hsl(208,49%,24%)" opacity="0.11"/>
+          <circle cx="50" cy="99" r="8" fill="#FF6B6B" opacity="0.75"/>
+          <circle cx="72" cy="99" r="8" fill="#FFD93D" opacity="0.75"/>
+          <circle cx="94" cy="99" r="8" fill="#6BCB77" opacity="0.75"/>
+          <rect x="44" y="146" width="220" height="15" rx="7" fill="hsl(208,49%,24%)" opacity="0.18"/>
+          <rect x="44" y="174" width="380" height="11" rx="5" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="44" y="194" width="340" height="11" rx="5" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="44" y="214" width="360" height="11" rx="5" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="44" y="250" width="160" height="14" rx="7" fill="hsl(208,49%,24%)" opacity="0.16"/>
+          <rect x="44" y="276" width="380" height="11" rx="5" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="44" y="296" width="300" height="11" rx="5" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="44" y="330" width="130" height="36" rx="18" fill="hsl(353,100%,62%)" opacity="0.80"/>
+          <!-- Floating phone -->
+          <rect x="420" y="200" width="190" height="380" rx="30" fill="hsl(208,49%,24%)" opacity="0.08" stroke="hsl(208,49%,24%)" stroke-opacity="0.18" stroke-width="1.5"/>
+          <rect x="435" y="224" width="160" height="330" rx="22" fill="hsl(208,49%,24%)" opacity="0.05"/>
+          <rect x="452" y="252" width="118" height="12" rx="6" fill="hsl(208,49%,24%)" opacity="0.20"/>
+          <rect x="452" y="274" width="90" height="9" rx="4" fill="hsl(208,49%,24%)" opacity="0.13"/>
+          <rect x="452" y="298" width="126" height="70" rx="10" fill="hsl(208,49%,24%)" opacity="0.09"/>
+          <rect x="452" y="382" width="90" height="9" rx="4" fill="hsl(208,49%,24%)" opacity="0.13"/>
+          <rect x="452" y="400" width="110" height="9" rx="4" fill="hsl(208,49%,24%)" opacity="0.10"/>
+          <rect x="452" y="426" width="68" height="28" rx="14" fill="hsl(353,100%,62%)" opacity="0.72"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SECTION: STATE OF THE ART (Dark) ========== -->
+  <section class="section-state" aria-labelledby="state-heading">
+    <div class="section-state__image" aria-hidden="true">
+      <!-- Phones illustration SVG -->
+      <svg viewBox="0 0 480 520" xmlns="http://www.w3.org/2000/svg" class="illus-phones">
+        <circle cx="240" cy="260" r="260" fill="rgba(255,255,255,0.05)"/>
+        <circle cx="240" cy="260" r="180" fill="rgba(255,255,255,0.04)"/>
+        <rect x="110" y="100" width="170" height="320" rx="26" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+        <rect x="124" y="120" width="142" height="282" rx="18" fill="rgba(255,255,255,0.06)"/>
+        <rect x="140" y="148" width="108" height="11" rx="5" fill="rgba(255,255,255,0.28)"/>
+        <rect x="140" y="168" width="80" height="8" rx="4" fill="rgba(255,255,255,0.18)"/>
+        <rect x="140" y="192" width="108" height="66" rx="9" fill="rgba(255,255,255,0.10)"/>
+        <rect x="140" y="272" width="80" height="8" rx="4" fill="rgba(255,255,255,0.16)"/>
+        <rect x="140" y="288" width="96" height="8" rx="4" fill="rgba(255,255,255,0.12)"/>
+        <rect x="140" y="314" width="58" height="24" rx="12" fill="hsl(353,100%,62%)" opacity="0.80"/>
+        <!-- Second phone -->
+        <rect x="270" y="130" width="160" height="310" rx="26" fill="rgba(255,255,255,0.09)" stroke="rgba(255,255,255,0.20)" stroke-width="1.5"/>
+        <rect x="283" y="150" width="134" height="272" rx="18" fill="rgba(255,255,255,0.04)"/>
+        <rect x="298" y="176" width="100" height="10" rx="5" fill="rgba(255,255,255,0.22)"/>
+        <rect x="298" y="196" width="74" height="8" rx="4" fill="rgba(255,255,255,0.14)"/>
+        <rect x="298" y="218" width="104" height="58" rx="8" fill="rgba(255,255,255,0.08)"/>
+        <rect x="298" y="292" width="74" height="8" rx="4" fill="rgba(255,255,255,0.14)"/>
+        <rect x="298" y="308" width="90" height="8" rx="4" fill="rgba(255,255,255,0.10)"/>
+      </svg>
+    </div>
+    <div class="section-state__text">
+      <h2 id="state-heading">State of the Art Infrastructure</h2>
+      <p>With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p>
+    </div>
+  </section>
+
+  <!-- ========== SECTION: FREE, OPEN, SIMPLE ========== -->
+  <section class="section-free" aria-labelledby="free-heading">
+    <div class="section-free__image" aria-hidden="true">
+      <!-- Laptop Illustration SVG -->
+      <svg viewBox="0 0 580 500" xmlns="http://www.w3.org/2000/svg" class="illus-laptop">
+        <rect x="60" y="60" width="380" height="260" rx="18" fill="hsl(208,49%,24%)" opacity="0.07" stroke="hsl(208,49%,24%)" stroke-opacity="0.14" stroke-width="1.5"/>
+        <rect x="76" y="80" width="348" height="224" rx="10" fill="hsl(208,49%,24%)" opacity="0.05"/>
+        <rect x="96" y="106" width="190" height="14" rx="7" fill="hsl(208,49%,24%)" opacity="0.20"/>
+        <rect x="96" y="130" width="290" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.12"/>
+        <rect x="96" y="150" width="250" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.12"/>
+        <rect x="96" y="170" width="270" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.12"/>
+        <rect x="96" y="200" width="160" height="13" rx="6" fill="hsl(208,49%,24%)" opacity="0.18"/>
+        <rect x="96" y="224" width="280" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.12"/>
+        <rect x="96" y="244" width="230" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.12"/>
+        <rect x="96" y="276" width="100" height="34" rx="17" fill="hsl(353,100%,62%)" opacity="0.80"/>
+        <!-- Laptop base -->
+        <rect x="20" y="322" width="460" height="18" rx="5" fill="hsl(208,49%,24%)" opacity="0.09"/>
+        <rect x="160" y="340" width="180" height="10" rx="5" fill="hsl(208,49%,24%)" opacity="0.06"/>
+      </svg>
+    </div>
+    <div class="section-free__text">
+      <h2 id="free-heading">Free, open, simple</h2>
+      <h3>Open source</h3>
+      <p>Blogr is an open-source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and relatively easy to learn.</p>
+      <h3>Powerful tooling</h3>
+      <p>Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.</p>
+    </div>
+  </section>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="footer__logo">
+    <a href="#" aria-label="Blogr home">
+      <svg xmlns="http://www.w3.org/2000/svg" width="101" height="32" aria-hidden="true">
+        <text x="0" y="26" font-family="Overpass, sans-serif" font-size="28" font-weight="600" fill="white" letter-spacing="-1">Blogr</text>
+      </svg>
+    </a>
+  </div>
+  <div class="footer__col">
+    <h4 class="footer__heading">Product</h4>
+    <ul>
+      <li><a href="#">Overview</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Marketplace</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Integrations</a></li>
+    </ul>
+  </div>
+  <div class="footer__col">
+    <h4 class="footer__heading">Company</h4>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+  </div>
+  <div class="footer__col">
+    <h4 class="footer__heading">Connect</h4>
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Newsletter</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+```
+
+  </body>
+</html>
