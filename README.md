@@ -17,7 +17,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add your https://dynamic-gingersnap-4913d3.netlify.app/live URL here](https://your-project.netlify.app)
+- Live Site URL: [https://dynamic-gingersnap-4913d3.netlify.app/your https://dynamic-gingersnap-4913d3.netlify.app/]
 
 ---
 
