@@ -13,13 +13,11 @@ Users should be able to:
 - Toggle the mobile navigation menu
 - Open and close dropdown menus on both desktop and mobile
 
-### Screenshot
 
-> *(Add your screenshot here after deployment)*
 
 ### Links
 
-- Live Site URL: [Add your live URL here](https://your-project.netlify.app)
+- Live Site URL: [Add your https://dynamic-gingersnap-4913d3.netlify.app/live URL here](https://your-project.netlify.app)
 
 ---
 
@@ -93,6 +91,6 @@ To run locally, simply open `index.html` in your browser — no build tools requ
 
 ## Author
 
-- **Name:** [Your Name]
-- **Matric:** [Your Matric Number]
-- **Frontend Mentor:** [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- **Name:** [Faith Ntiejum]
+- **Matric:** [19/10AQ110]
+
